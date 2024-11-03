@@ -1,0 +1,237 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header, .section, footer {
+    padding: 2em;
+}
+
+/* Responsive Layout untuk Mobile */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 1.5em;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    header .btn {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em;
+        text-align: center;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1em;
+    }
+
+    /* Section Content */
+    .section h2 {
+        font-size: 1.5em;
+    }
+    .section .container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 2em 1em;
+        font-size: 1em;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+/* Warna */
+:root {
+    --primary-color: #007bff; /* Biru sebagai warna utama */
+    --secondary-color: #FFD700; /* Kuning emas untuk aksen */
+    --dark-color: #333; /* Warna gelap untuk teks */
+    --light-color: #f9f9f9; /* Latar belakang terang */
+    --accent-color: #ff5722; /* Warna oranye untuk aksen tambahan */
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 2em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0.5em 0 1.5em;
+}
+
+header .btn {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+/* Section */
+.section {
+    padding: 4em 0;
+    background-color: var(--light-color);
+}
+
+.section:nth-child(even) {
+    background-color: #ffffff; /* Variasi latar pada setiap bagian */
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+}
+
+.section .container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.skills-list li {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 0.7em 1.5em;
+    margin: 0.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.2s;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+}
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 2em;
+    padding: 1em;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    object-fit: cover;
+    border: 3px solid var(--primary-color); /* Border dengan warna utama */
+}
+
+.profile-info {
+    flex: 1;
+    color: var(--dark-color);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.profile-info p {
+    margin: 0;
+}
+/* Contact Section di Atas Footer */
+.contact-section {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 3em 0;
+    text-align: center;
+     /* Garis atas sebagai pembatas */
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.contact-section a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-section a:hover {
+    color: var(--accent-color);
+}
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 1em 0;
+    text-align: center; /* Teks diatur ke tengah */
+    font-size: 0.9em;
+}
